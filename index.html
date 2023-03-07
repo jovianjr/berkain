@@ -12,88 +12,39 @@
 			href="https://fonts.googleapis.com/css?family=Nunito"
 		/>
 		<link href="assets/css/tailwind.css" rel="stylesheet" />
-
-		<script
-			src="https://kit.fontawesome.com/02cc2fc132.js"
-			crossorigin="anonymous"
-		></script>
 	</head>
 	<body class="min-h-screen w-full bg-primary">
-		<nav class="flex w-full justify-between px-12 py-9">
-			<i class="fa-solid fa-bars text-xl text-white"></i>
-			<h1 class="text-2xl font-semibold text-secondary">Berkain</h1>
-			<i class="fa-solid fa-cart-shopping text-xl text-white"></i>
-		</nav>
-
-		<section class="relative z-50 mt-20 flex h-[55vh] w-full justify-center">
-			<h1 class="relative z-10 text-center text-5xl tracking-widest">
-				merangkul ke<b>kaya</b>an budaya
-			</h1>
-			<div
-				class="z-1 absolute top-1/2 flex h-full w-full -translate-y-1/2 justify-between py-20"
-			>
-				<img src="assets/images/camille-bismonte-vUc03gxjEY4-unsplash 3.png" />
-				<img src="assets/images/visualsofdana-HxOQxsKZOS0-unsplash 1.png" />
-				<img src="assets/images/fikri-syahfana-ERMAtn9IYp4-unsplash 1.png" />
-				<img src="assets/images/cok-wisnu-ohzMzm9zWuA-unsplash 2.png" />
-			</div>
-			<img
-				class="absolute left-1/2 bottom-0 z-20 -translate-x-1/2"
-				src="assets/images/main.png"
-			/>
-		</section>
-		<footer
-			class="flex flex-col gap-24 bg-shades-700 px-24 py-12 text-shades-300 xl:px-40"
-		>
-			<div class="flex justify-between lg:gap-40 xl:gap-60">
-				<div class="flex flex-col gap-4">
-					<span class="font-lora text-base font-bold text-shades-100"
-						>Berkain</span
-					>
-					<div class="flex gap-16 lg:text-xs xl:text-sm">
-						<p>
-							Berkain adalah merek kain asli Indonesia yang menyediakan berbagai
-							jenis kain tradisional, seperti batik, tenun, songket, dan masih
-							banyak lagi. Kami berkomitmen untuk mempromosikan kekayaan budaya
-							Indonesia melalui karya-karya seni tekstil yang unik dan menarik.
-						</p>
-						<p>
-							Kami percaya bahwa Berkain dapat menjadi pilihan tepat untuk Anda
-							yang ingin tampil beda dan eksklusif, serta peduli dengan
-							perkembangan industri kerajinan lokal di Indonesia. Selamat datang
-							di Berkain, di mana keindahan kain Indonesia menjadi inspirasi
-							bagi karya kami.
-						</p>
-					</div>
+		<navbar-component></navbar-component>
+		<main>
+			<section class="relative z-50 mt-20 flex h-[55vh] w-full justify-center">
+				<h1 class="relative z-10 text-center text-5xl tracking-widest">
+					merangkul ke<b>kaya</b>an budaya
+				</h1>
+				<div
+					class="z-1 absolute top-1/2 flex h-full w-full -translate-y-1/2 justify-between py-20"
+				>
+					<img
+						src="assets/images/camille-bismonte-vUc03gxjEY4-unsplash 3.png"
+					/>
+					<img src="assets/images/visualsofdana-HxOQxsKZOS0-unsplash 1.png" />
+					<img src="assets/images/fikri-syahfana-ERMAtn9IYp4-unsplash 1.png" />
+					<img src="assets/images/cok-wisnu-ohzMzm9zWuA-unsplash 2.png" />
 				</div>
-				<div class="flex gap-14">
-					<div class="flex flex-col gap-2 text-base font-bold">
-						<span class="font-lora text-shades-100">Navigasi</span>
-						<ul class="flex flex-col gap-2 lg:text-xs xl:text-sm">
-							<li>Beranda</li>
-							<li>Telusuri</li>
-							<li>Login</li>
-							<li>Tentang Kami</li>
-						</ul>
-					</div>
-					<div class="flex flex-col gap-2 text-base font-bold">
-						<div class="w-max font-lora text-shades-100">Hubungi Kami</div>
-						<ul class="flex flex-col gap-2 lg:text-xs xl:text-sm">
-							<li>Hotline</li>
-							<li>Email</li>
-							<li>Instagram</li>
-							<li>Twitter</li>
-							<li>Facebook</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="text-center font-lora text-base text-shades-100">
-				Hak Cipta © 2023 Berkain
-			</div>
-		</footer>
+				<img
+					class="absolute left-1/2 bottom-0 z-20 -translate-x-1/2"
+					src="assets/images/main.png"
+				/>
+			</section>
+		</main>
+		<footer-component></footer-component>
 	</body>
 
+	<script src="components/navbar.js" type="text/javascript" defer></script>
+	<script src="components/footer.js" type="text/javascript" defer></script>
+	<script
+		src="https://kit.fontawesome.com/02cc2fc132.js"
+		crossorigin="anonymous"
+	></script>
 	<script
 		src="https://code.jquery.com/jquery-3.6.3.min.js"
 		integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="

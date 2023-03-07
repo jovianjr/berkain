@@ -421,6 +421,8 @@ video {
 
 html {
   font-family: Nunito;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 h1 {
@@ -631,16 +633,16 @@ h2 {
   left: -0.25rem;
 }
 
-.top-1\/2 {
-  top: 50%;
+.bottom-0 {
+  bottom: 0px;
 }
 
 .left-1\/2 {
   left: 50%;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.top-1\/2 {
+  top: 50%;
 }
 
 .isolate {
@@ -651,16 +653,16 @@ h2 {
   isolation: auto;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .z-10 {
   z-index: 10;
 }
 
 .z-20 {
   z-index: 20;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .float-right {
@@ -705,6 +707,10 @@ h2 {
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .box-border {
@@ -799,60 +805,24 @@ h2 {
   display: none;
 }
 
+.aspect-\[3\/4\] {
+  aspect-ratio: 3/4;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-1 {
   height: 0.25rem;
 }
 
-.h-1\/4 {
-  height: 25%;
-}
-
-.h-\[100vh\] {
-  height: 100vh;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.h-\[80vh\] {
-  height: 80vh;
+.h-\[55vh\] {
+  height: 55vh;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-3\/4 {
-  height: 75%;
-}
-
-.h-1\/2 {
-  height: 50%;
-}
-
-.h-\[60vh\] {
-  height: 60vh;
-}
-
-.h-4\/5 {
-  height: 80%;
-}
-
-.h-3\/5 {
-  height: 60%;
-}
-
-.h-\[40vh\] {
-  height: 40vh;
-}
-
-.h-\[50vh\] {
-  height: 50vh;
-}
-
-.h-\[55vh\] {
-  height: 55vh;
 }
 
 .min-h-screen {
@@ -863,6 +833,10 @@ h2 {
   width: 0.25rem;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -870,6 +844,14 @@ h2 {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-\[2\] {
+  flex: 2;
 }
 
 .flex-shrink {
@@ -914,11 +896,6 @@ h2 {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.-translate-x-2 {
-  --tw-translate-x: -0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .\!transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
@@ -937,6 +914,10 @@ h2 {
 
 .transform-none {
   transform: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .touch-auto {
@@ -1207,6 +1188,10 @@ h2 {
   grid-auto-flow: column dense;
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1375,6 +1360,14 @@ h2 {
   justify-items: stretch;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-14 {
   gap: 3.5rem;
 }
@@ -1391,12 +1384,16 @@ h2 {
   gap: 6rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
-.gap-40 {
-  gap: 10rem;
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1680,6 +1677,14 @@ h2 {
   border-radius: 0.25rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1770,6 +1775,11 @@ h2 {
   border-style: none;
 }
 
+.border-\[\#98896F\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(152 137 111 / var(--tw-border-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -1780,14 +1790,19 @@ h2 {
   background-color: rgb(163 152 134 / var(--tw-bg-opacity));
 }
 
+.bg-shades-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(210 191 166 / var(--tw-bg-opacity));
+}
+
+.bg-shades-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 57 44 / var(--tw-bg-opacity));
+}
+
 .bg-shades-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(35 32 27 / var(--tw-bg-opacity));
-}
-
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -1918,14 +1933,19 @@ h2 {
   padding-right: 6rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-.py-9 {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .py-20 {
@@ -1933,8 +1953,33 @@ h2 {
   padding-bottom: 5rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-44 {
+  padding-bottom: 11rem;
 }
 
 .text-left {
@@ -2002,14 +2047,29 @@ h2 {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-5xl {
   font-size: 3rem;
+  line-height: 1;
+}
+
+.text-9xl {
+  font-size: 8rem;
   line-height: 1;
 }
 
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -2106,6 +2166,16 @@ h2 {
   color: rgb(51 102 153 / .35);
 }
 
+.text-\[\#4A0015\] {
+  --tw-text-opacity: 1;
+  color: rgb(74 0 21 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -2124,6 +2194,21 @@ h2 {
 .text-shades-300 {
   --tw-text-opacity: 1;
   color: rgb(210 191 166 / var(--tw-text-opacity));
+}
+
+.text-shades-400 {
+  --tw-text-opacity: 1;
+  color: rgb(109 97 79 / var(--tw-text-opacity));
+}
+
+.text-shades-500 {
+  --tw-text-opacity: 1;
+  color: rgb(64 57 44 / var(--tw-text-opacity));
+}
+
+.text-shades-700 {
+  --tw-text-opacity: 1;
+  color: rgb(35 32 27 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2490,6 +2575,10 @@ h2 {
 
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 .before\:hover\:text-center:hover::before {
