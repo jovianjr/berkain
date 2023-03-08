@@ -665,6 +665,18 @@ h2 {
   top: 1rem;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.top-6 {
+  top: 1.5rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -2318,6 +2330,10 @@ h2 {
   font-weight: 600;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -2782,6 +2798,12 @@ h2 {
   transition-duration: 150ms;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2839,6 +2861,25 @@ h2 {
   }
 }
 
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.hover\:bg-shades-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(109 97 79 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-shades-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(210 191 166 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-shades-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 57 44 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -2846,6 +2887,16 @@ h2 {
 .hover\:text-shades-500:hover {
   --tw-text-opacity: 1;
   color: rgb(64 57 44 / var(--tw-text-opacity));
+}
+
+.hover\:text-shades-100:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 252 227 / var(--tw-text-opacity));
+}
+
+.hover\:text-shades-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(210 191 166 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -2873,6 +2924,14 @@ h2 {
 
 .hover\:focus\:text-center:focus:hover {
   text-align: center;
+}
+
+.group:hover .group-hover\:cursor-pointer {
+  cursor: pointer;
+}
+
+.group:hover .group-hover\:underline {
+  text-decoration-line: underline;
 }
 
 @media (min-width: 640px) {
