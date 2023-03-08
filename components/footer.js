@@ -33,10 +33,11 @@ class Footer extends HTMLElement {
         <div class="flex flex-col gap-2 text-base font-bold">
           <span class="font-lora text-shades-100">Navigasi</span>
           <ul class="flex flex-col gap-2 lg:text-xs xl:text-sm">
-            <li class="cursor-pointer hover:underline w-max">Beranda</li>
-            <li class="cursor-pointer hover:underline w-max">Telusuri</li>
-            <li class="cursor-pointer hover:underline w-max">Login</li>
-            <li class="cursor-pointer hover:underline w-max">Tentang Kami</li>
+            <li class="cursor-pointer hover:underline w-max"><a href="index.html">Beranda</a></li>
+            <li class="cursor-pointer hover:underline w-max"><a href="search.html">Cari Barang</a></li>
+            <li class="cursor-pointer hover:underline w-max"><a href="telusuri-kain.html">Telusuri Kain</a></li>
+            <li class="cursor-pointer hover:underline w-max"><a href="login.html">Login</a></li>
+            <li class="cursor-pointer hover:underline w-max"><a href="#">Tentang Kami</a></li>
           </ul>
         </div>
         <div class="flex flex-col gap-2 text-base font-bold">
