@@ -1,10 +1,10 @@
 class Footer extends HTMLElement {
-    constructor() {
-        super();
-    }
+	constructor() {
+		super();
+	}
 
-    connectedCallback() {
-        this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
     <footer
     class="flex flex-col gap-16 bg-shades-700 md:px-24 md:pt-12 pt-8 pb-4 px-7 text-shades-300 xl:px-40"
   >
@@ -33,20 +33,21 @@ class Footer extends HTMLElement {
         <div class="flex flex-col gap-2 text-base font-bold">
           <span class="font-lora text-shades-100">Navigasi</span>
           <ul class="flex flex-col gap-2 lg:text-xs xl:text-sm">
-            <li>Beranda</li>
-            <li>Telusuri</li>
-            <li>Login</li>
-            <li>Tentang Kami</li>
+            <li class="cursor-pointer hover:underline w-max"><a href="index.html">Beranda</a></li>
+            <li class="cursor-pointer hover:underline w-max"><a href="search.html">Cari Barang</a></li>
+            <li class="cursor-pointer hover:underline w-max"><a href="telusuri-kain.html">Telusuri Kain</a></li>
+            <li class="cursor-pointer hover:underline w-max"><a href="login.html">Login</a></li>
+            <li class="cursor-pointer hover:underline w-max"><a href="#">Tentang Kami</a></li>
           </ul>
         </div>
         <div class="flex flex-col gap-2 text-base font-bold">
           <div class="w-max font-lora text-shades-100">Hubungi Kami</div>
           <ul class="flex flex-col gap-2 lg:text-xs xl:text-sm">
-            <li>Hotline</li>
-            <li>Email</li>
-            <li>Instagram</li>
-            <li>Twitter</li>
-            <li>Facebook</li>
+            <li class="cursor-pointer hover:underline w-max">Hotline</li>
+            <li class="cursor-pointer hover:underline w-max">Email</li>
+            <li class="cursor-pointer hover:underline w-max">Instagram</li>
+            <li class="cursor-pointer hover:underline w-max">Twitter</li>
+            <li class="cursor-pointer hover:underline w-max">Facebook</li>
           </ul>
         </div>
       </div>
@@ -56,7 +57,7 @@ class Footer extends HTMLElement {
     </div>
   </footer>
       `;
-    }
+	}
 }
 
-customElements.define("footer-component", Footer);
+customElements.define('footer-component', Footer);

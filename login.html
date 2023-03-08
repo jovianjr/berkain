@@ -3,51 +3,65 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Lora"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Nunito"
-		/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" />
 		<link href="assets/css/tailwind.css" rel="stylesheet" />
 	</head>
 	<body class="min-h-screen w-full bg-primary">
 		<navbar-component></navbar-component>
 		<main>
-			<section class="h-[90vh] grid place-items-center">
-				<div class="bg-shades-100 w-11/12 max-w-xl md:p-16 px-8 py-16 min-h-[250px] drop-shadow-xl rounded">
-                    <h1 class="text-center font-lora text-shades-700 font-bold text-3xl tracking-widest">L O G I N</h1>
-                    <form action="" class="mt-8 flex flex-col gap-4">
-                        <input type="text" placeholder="Email atau username" class="mb-4 text-md w-full bg-none mt bg-shades-100 placeholder-shades-500 py-2 px-1 border-b-[1px] border-primary focus:outline-none">
-                        <input type="text" placeholder="Kata sandi" class="mb-4 text-md w-full bg-none mt bg-shades-100 placeholder-shades-500 py-2 px-1 border-b-[1px] border-primary focus:outline-none">
-                        <div class="w-full flex justify-between">
-                            <div class="">
-                                <input type="checkbox" name="remember_me" id="">
-                                <label for="remember_me">Ingat saya</label>
-                            </div>
-                            <a href="">Lupa kata sandi?</a>
-                        </div>
-                        <button type="submit" class="font-lora w-full py-2 text-center font-bold bg-shades-700 text-shades-100 rounded mt-4">Masuk</button>
-                    </form>
-                    <button type="button" class="font-lora w-full py-2 text-center font-bold text-shades-500 rounded mt-4">
-                        <i class="fa-brands fa-google fa-bars mr-2 text-sm"></i>Masuk dengan Akun Google</button>
-                        <p  class="w-full text-sm text-shades-500 text-center mt-4">Belum mempunyai akun? <a href="register.html" class="font-bold">Daftar</a></p>
-                        
-                    </div>
+			<section class="grid h-[90vh] place-items-center">
+				<div
+					class="min-h-[250px] w-11/12 max-w-xl rounded bg-shades-100 px-8 py-16 drop-shadow-xl md:p-16"
+				>
+					<h1 class="text-center font-lora text-3xl font-bold tracking-widest text-shades-700">
+						L O G I N
+					</h1>
+					<form action="" class="mt-8 flex flex-col gap-4">
+						<input
+							type="text"
+							placeholder="Email atau username"
+							class="text-md mt mb-4 w-full border-b-[1px] border-primary bg-shades-100 bg-none py-2 px-1 placeholder-shades-500 focus:outline-none"
+						/>
+						<input
+							type="text"
+							placeholder="Kata sandi"
+							class="text-md mt mb-4 w-full border-b-[1px] border-primary bg-shades-100 bg-none py-2 px-1 placeholder-shades-500 focus:outline-none"
+						/>
+						<div class="flex w-full justify-between">
+							<div class="">
+								<input type="checkbox" name="remember_me" id="" />
+								<label for="remember_me">Ingat saya</label>
+							</div>
+							<a href="#" class="hover:underline">Lupa kata sandi?</a>
+						</div>
+						<button
+							type="submit"
+							class="mt-4 w-full rounded bg-shades-700 py-2 text-center font-lora font-bold text-shades-100 transition-all hover:bg-shades-500"
+						>
+							Masuk
+						</button>
+					</form>
+					<button
+						type="button"
+						class="mt-4 w-full rounded py-2 text-center font-lora font-bold text-shades-500 hover:text-shades-300"
+					>
+						<i class="fa-brands fa-google fa-bars mr-2 text-sm"></i>Masuk dengan Akun Google
+					</button>
+					<p class="mt-4 w-full text-center text-sm text-shades-500">
+						Belum mempunyai akun?
+						<a href="register.html" class="font-bold hover:underline">Daftar</a>
+					</p>
+				</div>
 			</section>
 		</main>
-        
+
 		<footer-component></footer-component>
 	</body>
 
 	<script src="components/navbar.js" type="text/javascript" defer></script>
 	<script src="components/footer.js" type="text/javascript" defer></script>
-	<script
-		src="https://kit.fontawesome.com/02cc2fc132.js"
-		crossorigin="anonymous"
-	></script>
+	<script src="https://kit.fontawesome.com/02cc2fc132.js" crossorigin="anonymous"></script>
 	<script
 		src="https://code.jquery.com/jquery-3.6.3.min.js"
 		integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
