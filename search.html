@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Lora"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Nunito"
+		/>
+		<link href="assets/css/tailwind.css" rel="stylesheet" />
+	</head>
+	<body class="min-h-screen w-full bg-primary">
+		<navbar-component></navbar-component>
+        <section class="min-h-[90vh] flex lg:w-9/11 max-w-screen-2xl mx-auto lg:flex-row flex-col">
+            <aside class="w-3/12 p-16 lg:flex flex-col gap-8 text-shades-700 hidden">
+                <h2 class="text-2xl font-bold font-lora">Filter</h2>
+                <div class="">
+                    <h3 class="text-xl font-bold font-lora mb-2">Asal</h3>
+                    <div class="flex flex-col gap-2">
+                        <div class="">
+                            <input type="checkbox" name="jakarta" id="jakarta">
+                            <label for="jakarta" class="ml-2">DKI Jakarta</label>
+                        </div>
+                        <div class="">
+                            <input type="checkbox" name="mal" id="mal">
+                            <label for="mal" class="ml-2">Maluku</label>
+                        </div>
+                        <div class="">
+                            <input type="checkbox" name="jateng" id="jateng">
+                            <label for="jateng" class="ml-2">Jawa Tengah</label>
+                        </div>
+                        <div class="">
+                            <input type="checkbox" name="sumut" id="sumut">
+                            <label for="sumut" class="ml-2">Sumatera Utara</label>
+                        </div>
+                     </div>
+                </div>
+                <div class="">
+                    <h3 class="text-xl font-bold font-lora mb-2">Gender</h3>
+                    <div class="flex flex-col gap-2">
+                        <div class="">
+                            <input type="checkbox" name="pria" id="pria">
+                            <label for="pria" class="ml-2">Pria</label>
+                        </div>
+                        <div class="">
+                            <input type="checkbox" name="wanita" id="wanita">
+                            <label for="wanita" class="ml-2">Wanita</label>
+                        </div>
+                        <div class="">
+                            <input type="checkbox" name="unisex" id="unisex">
+                            <label for="unisex" class="ml-2">Unisex</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <h3 class="text-xl font-bold font-lora mb-2">Kategori</h3>
+                    <div class="flex flex-col gap-2">
+                        <div class="">
+                            <p for="" class="hover:text-shades-500 transition"><a href="">Atasan</a></p>
+                            <div class="ml-4">
+                                <p class="hover:text-shades-500 transition"><a href="">Baju</a></p>
+                                <p class="hover:text-shades-500 transition"><a href="">Gaun</a></p>
+                                <p class="hover:text-shades-500 transition"><a href="">Selendang</a></p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p for="" class="hover:text-shades-500 transition"><a href="">Bawahan</a></p>
+                            <div class="ml-4">
+                                <p class="hover:text-shades-500 transition"><a href="">Celana Panjang</a></p>
+                                <p class="hover:text-shades-500 transition"><a href="">Celana Pendek</a></p>
+                                <p class="hover:text-shades-500 transition"><a href="">Rok</a></p>
+                                <p class="hover:text-shades-500 transition"><a href="">Sarung</a></p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p for="" class="hover:text-shades-500 transition"><a href="">Aksesoris Kepala</a></p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="lg:w-9/12 lg:p-16 p-8 flex flex-col">
+                <div class="w-full flex justify-between items-center mb-8">
+
+                    <i class="fa fa-filter text-lg text-shades-500 visible lg:invisible"></i>
+                    <input type="text" placeholder="&#xF002;&nbsp;&nbsp;Pencarian .." class="fa w-lg text-md bg-inherit mt placeholder-shades-500 py-2 px-1 border-b-[1px] border-shades-400 focus:outline-none" style="font-family:Nunito, FontAwesome;">
+                </div>
+
+                <div class="grid gap-16 lg:grid-cols-5 lg:grid-rows-2 grid-cols-2 grid-rows-3 mb-16">
+                    <div class="flex flex-col">
+                        <img src="/assets/images/detail/hiu-tanah-lirang.png" class="w-full object-cover mb-1 rounded" alt="">
+                        <p class="text-shades-400 font-bold font-lora text-sm">Maluku</p>
+                        <h4 class="text-xl font-lora font-bold">Hiu Tanah Lirang</h4>
+                        <h5 class="text-2xl font-lora font-bold text-c-red-500">Rp235,000</h5>
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="/assets/images/detail/endek.png" class="w-full object-cover mb-1 rounded" alt="">
+                        <p class="text-shades-400 font-bold font-lora text-sm">Jawa Tengah</p>
+                        <h4 class="text-xl font-lora font-bold">Kuno Tuan</h4>
+                        <h5 class="text-2xl font-lora font-bold text-c-red-500">Rp270,000</h5>
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="/assets/images/detail/endek.png" class="w-full object-cover mb-1 rounded" alt="">
+                        <p class="text-shades-400 font-bold font-lora text-sm">Bali</p>
+                        <h4 class="text-xl font-lora font-bold">Endek</h4>
+                        <h5 class="text-2xl font-lora font-bold text-c-red-500">Rp425,000</h5>
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="/assets/images/detail/endek.png" class="w-full object-cover mb-1 rounded" alt="">
+                        <p class="text-shades-400 font-bold font-lora text-sm">Maluku</p>
+                        <h4 class="text-xl font-lora font-bold">Hitam Tenun</h4>
+                        <h5 class="text-2xl font-lora font-bold text-c-red-500">Rp225,000</h5>
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="/assets/images/detail/endek.png" class="w-full object-cover mb-1 rounded" alt="">
+                        <p class="text-shades-400 font-bold font-lora text-sm">Maluku</p>
+                        <h4 class="text-xl font-lora font-bold">Hiu Tanah Lirang</h4>
+                        <h5 class="text-2xl font-lora font-bold text-c-red-500">Rp235,000</h5>
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="/assets/images/detail/endek.png" class="w-full object-cover mb-1 rounded" alt="">
+                        <p class="text-shades-400 font-bold font-lora text-sm">Maluku</p>
+                        <h4 class="text-xl font-lora font-bold">Hiu Tanah Lirang</h4>
+                        <h5 class="text-2xl font-lora font-bold text-c-red-500">Rp235,000</h5>
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="/assets/images/detail/endek.png" class="w-full object-cover mb-1 rounded" alt="">
+                        <p class="text-shades-400 font-bold font-lora text-sm">Maluku</p>
+                        <h4 class="text-xl font-lora font-bold">Hiu Tanah Lirang</h4>
+                        <h5 class="text-2xl font-lora font-bold text-c-red-500">Rp235,000</h5>
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="/assets/images/detail/endek.png" class="w-full object-cover mb-1 rounded" alt="">
+                        <p class="text-shades-400 font-bold font-lora text-sm">Maluku</p>
+                        <h4 class="text-xl font-lora font-bold">Hiu Tanah Lirang</h4>
+                        <h5 class="text-2xl font-lora font-bold text-c-red-500">Rp235,000</h5>
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="/assets/images/detail/endek.png" class="w-full object-cover mb-1 rounded" alt="">
+                        <p class="text-shades-400 font-bold font-lora text-sm">Maluku</p>
+                        <h4 class="text-xl font-lora font-bold">Hiu Tanah Lirang</h4>
+                        <h5 class="text-2xl font-lora font-bold text-c-red-500">Rp235,000</h5>
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="/assets/images/detail/endek.png" class="w-full object-cover mb-1 rounded" alt="">
+                        <p class="text-shades-400 font-bold font-lora text-sm">Maluku</p>
+                        <h4 class="text-xl font-lora font-bold">Hiu Tanah Lirang</h4>
+                        <h5 class="text-2xl font-lora font-bold text-c-red-500">Rp235,000</h5>
+                    </div>
+                </div>
+                <hr class="border-shades-400">
+                <div class="flex justify-between mt-4 font-bold">
+                    <p class="text-shades-500">10 dari 42 <span class="lg:block hidden">produk ditemukan</span></p>
+                    <div class="flex gap-4 items-center">
+                        <button class=""><i class="fa fa-arrow-left"></i></button>
+                        <button class="w-8 h-8 grid place-items-center bg-shades-100 rounded">1</button>
+                        <div class="hidden md:flex  gap-4">
+                            <button class="w-8 h-8 grid place-items-center">2</button>
+                            <button class="w-8 h-8 grid place-items-center">3</button>
+                            <button class="w-8 h-8 grid place-items-center">4</button>
+                            <button class="w-8 h-8 grid place-items-center">5</button>
+                        </div>
+                        <button class=""><i class="fa fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </main>
+        </section>
+		
+		<footer-component></footer-component>
+	</body>
+
+	<script src="components/navbar.js" type="text/javascript" defer></script>
+	<script src="components/footer.js" type="text/javascript" defer></script>
+	<script
+		src="https://kit.fontawesome.com/02cc2fc132.js"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://code.jquery.com/jquery-3.6.3.min.js"
+		integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+		crossorigin="anonymous"
+	></script>
+</html>
