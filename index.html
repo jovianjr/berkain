@@ -3,35 +3,39 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Lora"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Nunito"
-		/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" />
 		<link href="assets/css/tailwind.css" rel="stylesheet" />
 	</head>
 	<body class="min-h-screen w-full bg-primary">
 		<navbar-component></navbar-component>
 		<main>
 			<section class="relative z-50 mt-20 flex h-[55vh] w-full justify-center">
-				<h1 class="relative z-10 text-center text-5xl tracking-widest">
+				<h1 class="relative z-10 text-center text-3xl tracking-widest lg:text-5xl">
 					merangkul ke<b>kaya</b>an budaya
 				</h1>
 				<div
-					class="z-1 absolute top-1/2 flex h-full w-full -translate-y-1/2 justify-between py-20"
+					class="z-1 absolute top-1/2 flex h-full w-full -translate-y-1/2 justify-between overflow-auto py-10 lg:py-20"
 				>
 					<img
 						src="assets/images/camille-bismonte-vUc03gxjEY4-unsplash 3.png"
+						class="object-contain lg:object-cover"
 					/>
-					<img src="assets/images/visualsofdana-HxOQxsKZOS0-unsplash 1.png" />
-					<img src="assets/images/fikri-syahfana-ERMAtn9IYp4-unsplash 1.png" />
-					<img src="assets/images/cok-wisnu-ohzMzm9zWuA-unsplash 2.png" />
+					<img
+						src="assets/images/visualsofdana-HxOQxsKZOS0-unsplash 1.png"
+						class="object-contain lg:object-cover"
+					/>
+					<img
+						src="assets/images/fikri-syahfana-ERMAtn9IYp4-unsplash 1.png"
+						class="object-contain lg:object-cover"
+					/>
+					<img
+						src="assets/images/cok-wisnu-ohzMzm9zWuA-unsplash 2.png"
+						class="object-contain lg:object-cover"
+					/>
 				</div>
 				<img
-					class="absolute left-1/2 bottom-0 z-20 -translate-x-1/2"
+					class="absolute left-1/2 bottom-0 z-20 w-4/5 -translate-x-1/2 lg:w-fit"
 					src="assets/images/main.png"
 				/>
 			</section>
@@ -41,10 +45,7 @@
 
 	<script src="components/navbar.js" type="text/javascript" defer></script>
 	<script src="components/footer.js" type="text/javascript" defer></script>
-	<script
-		src="https://kit.fontawesome.com/02cc2fc132.js"
-		crossorigin="anonymous"
-	></script>
+	<script src="https://kit.fontawesome.com/02cc2fc132.js" crossorigin="anonymous"></script>
 	<script
 		src="https://code.jquery.com/jquery-3.6.3.min.js"
 		integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
