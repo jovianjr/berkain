@@ -34,9 +34,9 @@ class Footer extends HTMLElement {
           <span class="font-lora text-shades-100">Navigasi</span>
           <ul class="flex flex-col gap-2 lg:text-xs xl:text-sm">
             <li class="cursor-pointer hover:underline w-max"><a href="index.html">Beranda</a></li>
-            <li class="cursor-pointer hover:underline w-max"><a href="search.html">Cari Barang</a></li>
-            <li class="cursor-pointer hover:underline w-max"><a href="telusuri-kain.html">Telusuri Kain</a></li>
-            <li class="cursor-pointer hover:underline w-max"><a href="login.html">Login</a></li>
+            <li class="cursor-pointer hover:underline w-max"><a href="search.html">Telusuri</a></li>
+            <li class="cursor-pointer hover:underline w-max"><a href="map.html">Peta</a></li>
+            <li class="cursor-pointer hover:underline w-max"><a href="login.html">Masuk</a></li>
             <li class="cursor-pointer hover:underline w-max"><a href="#">Tentang Kami</a></li>
           </ul>
         </div>
