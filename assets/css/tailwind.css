@@ -669,6 +669,14 @@ h2 {
   top: 1.5rem;
 }
 
+.right-1\/2 {
+  right: 50%;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -914,6 +922,14 @@ h2 {
   height: 100%;
 }
 
+.h-\[75vh\] {
+  height: 75vh;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 .min-h-\[250px\] {
   min-height: 250px;
 }
@@ -973,6 +989,10 @@ h2 {
 
 .w-4\/5 {
   width: 80%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-screen-2xl {
@@ -1549,6 +1569,10 @@ h2 {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-y-8 {
@@ -2137,6 +2161,10 @@ h2 {
   padding: 2rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2200,6 +2228,26 @@ h2 {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pb-1 {
@@ -2990,12 +3038,36 @@ h2 {
     visibility: hidden;
   }
 
+  .lg\:right-0 {
+    right: 0px;
+  }
+
+  .lg\:right-14 {
+    right: 3.5rem;
+  }
+
+  .lg\:top-1\/2 {
+    top: 50%;
+  }
+
   .lg\:block {
     display: block;
   }
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:h-\[90vh\] {
+    height: 90vh;
+  }
+
+  .lg\:h-full {
+    height: 100%;
+  }
+
+  .lg\:h-auto {
+    height: auto;
   }
 
   .lg\:w-9\/12 {
@@ -3013,6 +3085,16 @@ h2 {
   .lg\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .lg\:translate-x-10 {
+    --tw-translate-x: 2.5rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:-translate-y-1\/2 {
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:grid-cols-5 {
@@ -3035,6 +3117,14 @@ h2 {
     gap: 10rem;
   }
 
+  .lg\:gap-3 {
+    gap: 0.75rem;
+  }
+
+  .lg\:rounded-3xl {
+    border-radius: 1.5rem;
+  }
+
   .lg\:object-cover {
     -o-object-fit: cover;
        object-fit: cover;
@@ -3047,6 +3137,24 @@ h2 {
   .lg\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .lg\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .lg\:pr-12 {
+    padding-right: 3rem;
   }
 
   .lg\:text-base {
@@ -3067,6 +3175,16 @@ h2 {
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 

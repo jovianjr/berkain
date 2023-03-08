@@ -21,9 +21,10 @@
 		</div>
 		<main>
 			<section class="grid h-[90vh] place-items-center">
-				<h1 class="font-lora text-3xl font-bold">— Telusuri Kain Indonesia —</h1>
+				<h1 class="font-lora text-xl font-bold lg:text-3xl">— Telusuri Kain Indonesia —</h1>
 				<div>
 					<svg
+						class="w-screen"
 						id="map"
 						width="934"
 						height="373"
@@ -311,18 +312,18 @@
 						</defs>
 					</svg>
 				</div>
-				<div class="w-1/2 text-center lg:text-xs xl:text-sm">
+				<div class="px-5 text-center text-xs lg:w-1/2 lg:px-0 xl:text-sm">
 					Anda sudah mengoleksi kain dari <b>3 provinsi</b> berbeda! Koleksi lebih banyak dan raih
 					promo menarik.
 				</div>
 				<div
 					id="detail-produk"
-					class="absolute right-0 top-1/2 hidden -translate-y-1/2 overflow-hidden"
+					class="lg:-0 absolute hidden h-screen overflow-hidden px-2 py-4 lg:top-1/2 lg:right-0 lg:h-auto lg:-translate-y-1/2"
 				>
 					<div
-						class="relative flex translate-x-10 flex-col gap-3 rounded-3xl bg-shades-100 py-14 pl-8 pr-12"
+						class="relative flex h-full flex-col gap-5 rounded-md bg-shades-100 py-8 px-6 lg:translate-x-10 lg:gap-3 lg:rounded-3xl lg:py-14 lg:pl-8 lg:pr-12"
 					>
-						<h1 class="font-lora text-2xl font-bold">Kain Kalimantan Selatan</h1>
+						<h1 class="font-lora text-lg font-bold lg:text-2xl">Kain Kalimantan Selatan</h1>
 						<p>Kamu sudah mengoleksi kain:</p>
 						<ul class="list-inside list-disc pl-4">
 							<li>Tapis</li>
@@ -337,7 +338,7 @@
 										class="aspect-[3/4] object-cover"
 										src="/assets/images/detail/hiu-tanah-lirang.png"
 									/>
-									<div class="flex flex-col font-lora text-base font-bold">
+									<div class="flex flex-col font-lora text-sm font-bold lg:text-base">
 										<span class="text-xs text-shades-400">Maluku</span>
 										<span class="text-shades-700">Hiu Tanah Lirang</span>
 										<span class="text-[#4A0015]">Rp235,000</span>
@@ -348,7 +349,7 @@
 										class="aspect-[3/4] object-cover"
 										src="/assets/images/detail/kuno-tuan.png"
 									/>
-									<div class="flex flex-col font-lora text-base font-bold">
+									<div class="flex flex-col font-lora text-sm font-bold lg:text-base">
 										<span class="text-xs text-shades-400">Jawa Tengah</span>
 										<span class="text-shades-700">Kuno Tuan</span>
 										<span class="text-[#4A0015]">Rp270,000</span>
@@ -356,7 +357,7 @@
 								</div>
 								<div class="flex flex-col gap-4">
 									<img class="aspect-[3/4] object-cover" src="/assets/images/detail/endek.png" />
-									<div class="flex flex-col font-lora text-base font-bold">
+									<div class="flex flex-col font-lora text-sm font-bold lg:text-base">
 										<span class="text-xs text-shades-400">Bali</span>
 										<span class="text-shades-700">Endek</span>
 										<span class="text-[#4A0015]">Rp425,000</span>
@@ -365,7 +366,7 @@
 							</div>
 						</div>
 						<i
-							class="fa-solid fa-xmark absolute right-14 top-4 cursor-pointer text-2xl"
+							class="fa-solid fa-xmark absolute right-4 top-4 cursor-pointer text-2xl lg:right-14"
 							id="close-btn"
 						></i>
 					</div>
