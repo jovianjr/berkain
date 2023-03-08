@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Lora"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Nunito"
+		/>
+		<link href="assets/css/tailwind.css" rel="stylesheet" />
+	</head>
+	<body class="min-h-screen w-full bg-primary">
+		<navbar-component></navbar-component>
+		<main>
+			<section class="min-h-[80vh] py-16 flex md:gap-32 gap-16 justify-center items-center md:flex-row flex-col">
+				<div class="bg-shades-100 w-11/12 max-w-xl md:p-16 px-8 py-16 min-h-[250px] drop-shadow-xl rounded">
+                    <h1 class="text-center font-lora text-shades-700 font-bold tracking-tighter text-3xl mb-16">Keranjang Anda</h1>
+                     <div class="flex flex-col w-full gap-8">
+                        <div class="flex items-center">
+                            <div class="relative">
+                                <i class="fa fa-remove mr-2 text-shades-100 absolute left-2 top-2 text-md"></i>
+                                <img src="/assets/images/detail/endek.png" class="w-32 h-32 object-cover rounded-lg" alt="">
+                            </div>
+                            
+                            <div class="ml-4 flex flex-col gap-1">
+                                <h3 class="text-lg font-lora font-bold">Sutra Endek</h3>
+                                <p class="text-sm text-shades-400">Ukuran M</p>
+                                <p class="text-sm text-shades-400 md:mb-2">Qty: 1</p>
+                                    <h2 class="text-2xl font-lora font-bold text-c-red-500">Rp220,000</h2>
+                            </div>
+                            
+                        </div>
+                        <div class="flex items-center">
+                            <div class="relative">
+                                <i class="fa fa-remove mr-2 text-shades-100 absolute left-2 top-2 text-md"></i>
+                                <img src="/assets/images/detail/hiu-tanah-lirang.png" class="w-32 h-32 object-cover rounded-lg" alt="">
+                            </div>
+                            <div class="ml-4 flex flex-col gap-1">
+                                <h3 class="text-lg font-lora font-bold">Hiu Tanah Lirang</h3>
+                                <p class="text-sm text-shades-400">Ukuran M</p>
+                                <p class="text-sm text-shades-400 md:mb-2">Qty: 1</p>
+                                <h2 class="text-2xl font-lora font-bold text-c-red-500">Rp193,000</h2>
+                            </div>
+                            
+                        </div>
+
+                        <hr class="mt-4">
+
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between">
+                                <span>Subtotal</span>
+                                <span>Rp413,000</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Ongkos Kirim (1kg)</span>
+                                <span>Rp24,000</span>
+                            </div>
+                            <div class="font-bold font-lora text-lg flex justify-between">
+                                <span>Total Pembayaran</span>
+                                <span>Rp437,000</span>
+                            </div>
+                        </div>
+                       
+                     </div>
+                </div>
+				<div class="bg-shades-100 w-11/12 max-w-xl md:p-16 px-8 py-16 min-h-[250px] drop-shadow-xl rounded">
+                    <h1 class="text-center font-lora text-shades-700 font-bold text-3xl tracking-widest">C H E C K O U T</h1>
+                    <form action="" class="mt-8 flex flex-col gap-4">
+                        <input type="text" placeholder="Nama Lengkap" class="mb-4 text-md w-full bg-none mt bg-shades-100 placeholder-shades-500 py-2 px-1 border-b-[1px] border-primary focus:outline-none">
+                        <input type="text" placeholder="Alamat" class="mb-4 text-md w-full bg-none mt bg-shades-100 placeholder-shades-500 py-2 px-1 border-b-[1px] border-primary focus:outline-none">
+                        <input type="email" placeholder="Email" class="mb-4 text-md w-full bg-none mt bg-shades-100 placeholder-shades-500 py-2 px-1 border-b-[1px] border-primary focus:outline-none">
+                        <input type="number" placeholder="Nomor Telepon" class="mb-4 text-md w-full bg-none mt bg-shades-100 placeholder-shades-500 py-2 px-1 border-b-[1px] border-primary focus:outline-none">
+                     
+                            <div class="">
+                                <p class="text-md w-full font-bold mb-4">Metode Pembayaran</p>
+                                <div class="flex flex-col">
+                                    <div class="mb-2">
+                                        <input type="radio" name="payment" value="ovo" id="ovo"> <label for="ovo">OVO</label>
+                                    </div>
+                                    <div class="mb-2">
+                                        <input type="radio" name="payment" value="gopay" id="gopay"> <label for="gopay">Gopay</label>
+                                    </div>
+                                    <div class="mb-2">
+                                        <input type="radio" name="payment" value="mandiri" id="mandiri"> <label for="mandiri">VA Mandiri</label>
+                                    </div>
+                                    <div class="mb-2">
+                                        <input type="radio" name="payment" value="bca" id="bca"> <label for="bca">VA BCA</label>
+                                    </div>
+                                </div>
+                        </div>
+                        <button type="submit" class="font-lora w-full py-2 text-center font-bold bg-shades-700 text-shades-100 rounded mt-4">Bayar</button>
+                    </form>
+                    
+                </div>
+			</section>
+		</main>
+        
+		<footer-component></footer-component>
+	</body>
+
+	<script src="components/navbar.js" type="text/javascript" defer></script>
+	<script src="components/footer.js" type="text/javascript" defer></script>
+	<script
+		src="https://kit.fontawesome.com/02cc2fc132.js"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://code.jquery.com/jquery-3.6.3.min.js"
+		integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+		crossorigin="anonymous"
+	></script>
+</html>
