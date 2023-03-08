@@ -12,12 +12,37 @@
 			href="https://fonts.googleapis.com/css?family=Nunito"
 		/>
 		<link href="assets/css/tailwind.css" rel="stylesheet" />
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 	</head>
-	<body class="min-h-screen w-full bg-primary">
-		<navbar-component></navbar-component>
+	<body class="min-h-screen w-full bg-primary relative">
+		<!-- <navbar-component></navbar-component> -->
+		<nav class="flex w-full justify-between px-12 py-9 relative">
+            <i class="nav-open fa-solid fa-bars text-xl text-secondary"></i>
+            <h1 class="text-2xl font-semibold text-secondary font-lora tracker-tighter drop-shadow-lg">Berkain</h1>
+            <a href="checkout.html"><i class="fa-solid fa-cart-shopping text-xl text-secondary"></i></a>
+        </nav>
+
+        <div class="nav-container -left-full absolute top-0 h-screen w-full bg-primary z-[99] overflow-hidden">
+          <div class="navhover-beranda w-2/12 absolute -top-8 font-lora text-shades-100 transition-all translate-y-4 text-6xl text-justify tracking-widest opacity-0">B E R A N D A B E R A N D A B E R A N D A B E R A N D A B E R A N D A B E R A N D A B E R A N D A B E R A N D A B E R A N D A B E R A N D A B E R A N D A B E R A N D A B E R A N D A B E R A N D A</div>
+          <div class="navhover-telusuri w-2/12 absolute -top-8 font-lora text-shades-100 transition-all translate-y-4 text-6xl text-justify tracking-widest opacity-0">T E L U S U R I T E L U S U R I T E L U S U R I T E L U S U R I T E L U S U R I T E L U S U R I T E L U S U R I T E L U S U R I T E L U S U R I T E L U S U R I T E L U S U R I T E L U S U R I T E </div>
+          <div class="navhover-peta w-2/12 absolute -top-8 font-lora text-shades-100 transition-all translate-y-4 text-6xl text-justify tracking-widest opacity-0">P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A P E T A </div>
+          <div class="navhover-masuk w-2/12 absolute -top-8 font-lora text-shades-100 transition-all translate-y-4 text-6xl text-justify tracking-widest opacity-0">M A S U K M A S U K M A S U K M A S U K M A S U K M A S U K M A S U K M A S U K M A S U K M A S U K M A S U K M A S U K M A S U K M A S U K M A S U K M A S U K M A S U K M A S U K M A S U K M A S U K M A S U K </div>
+          <nav class="flex w-full justify-between px-12 py-9 absolute">
+            <i class="nav-close fa-solid fa-remove text-xl text-secondary"></i>
+            <h1 class="text-2xl font-semibold text-secondary font-lora tracker-tighter drop-shadow-lg">Berkain</h1>
+            <a href="checkout.html"><i class="fa-solid fa-cart-shopping text-xl text-secondary"></i></a>
+          </nav>
+          <nav class="w-full h-full flex flex-col justify-center items-center text-4xl font-lora gap-8 font-bold">
+            <a href="index.html" class="hover:text-shades-100 hover:drop-shadow-lg transition menu menu-beranda">Beranda</a>
+            <a href="search.html" class="hover:text-shades-100 hover:drop-shadow-lg transition menu menu-telusuri">Telusuri</a>
+            <a href="map.html" class="hover:text-shades-100 hover:drop-shadow-lg transition menu menu-peta">Peta</a>
+            <a href="login.html" class="hover:text-shades-100 hover:drop-shadow-lg transition menu menu-masuk">Masuk</a>
+          </nav>
+        </div>
 		<main>
 			<section class="relative z-50 mt-20 flex h-[55vh] w-full justify-center">
-				<h1 class="relative z-10 text-center text-5xl tracking-widest">
+				<h1 class="relative z-10 text-center text-5xl tracking-widest font-lora">
 					merangkul ke<b>kaya</b>an budaya
 				</h1>
 				<div
@@ -50,4 +75,55 @@
 		integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
 		crossorigin="anonymous"
 	></script>
+
+	<script>
+		var t1 = new TimelineMax({ paused: true });
+
+		t1.to(".nav-container", 1, {
+			left: 0,
+			ease: Expo.easeInOut,
+		});
+
+		t1.staggerFrom(
+			".nav-container .menu",
+			0.8,
+			{ y: 100, opacity: 0, ease: Expo.easeOut },
+			"0.1",
+			"-=0.5"
+		);
+
+		t1.reverse();
+		$(document).on("click", ".nav-open", function () {
+			t1.reversed(!t1.reversed());
+		});
+
+		$(document).on("click", ".nav-close", function () {
+			t1.reversed(!t1.reversed());
+		});
+
+		$(".menu-beranda").hover(function() {
+			$(".navhover-beranda").css("opacity", "20%")
+			$(".navhover-beranda").css("translateY", "2px")
+		}, function() {
+			$(".navhover-beranda").css("opacity", "0%")
+		})
+
+		$(".menu-telusuri").hover(function() {
+			$(".navhover-telusuri").css("opacity", "20%")
+		}, function() {
+			$(".navhover-telusuri").css("opacity", "0%")
+		})
+
+		$(".menu-peta").hover(function() {
+			$(".navhover-peta").css({"opacity": "20%"})
+		}, function() {
+			$(".navhover-peta").css("opacity", "0%")
+		})
+
+		$(".menu-masuk").hover(function() {
+			$(".navhover-masuk").css("opacity", "20%")
+		}, function() {
+			$(".navhover-masuk").css("opacity", "0%")
+		})
+	</script>
 </html>
