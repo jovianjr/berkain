@@ -6,11 +6,11 @@ an.to(".nav-container", 1, {
 });
 
 an.staggerFrom(
-    ".nav-container .menu",
-    0.8,
+    ".menu",
+    1.5,
     { y: 100, opacity: 0, ease: Expo.easeOut },
     "0.1",
-    "-=0.5"
+    "-=0.4"
 );
 
 an.reverse();
@@ -25,7 +25,6 @@ $(document).on("click", ".nav-close", function () {
 $(".menu-beranda").hover(
     function () {
         $(".navhover-beranda").css("opacity", "20%");
-        $(".navhover-beranda").css("translateY", "2px");
     },
     function () {
         $(".navhover-beranda").css("opacity", "0%");

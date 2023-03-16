@@ -1,10 +1,10 @@
 class Navbar extends HTMLElement {
-	constructor() {
-		super();
-	}
+    constructor() {
+        super();
+    }
 
-	connectedCallback() {
-		this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
 		    <nav class="flex w-full justify-between px-12 py-9 relative">
             <i class="nav-open fa-solid fa-bars text-xl text-secondary"></i>
             <h1 class="text-2xl font-semibold text-secondary font-lora tracker-tighter drop-shadow-lg"><a href="index.html">Berkain</a></h1>
@@ -22,14 +22,14 @@ class Navbar extends HTMLElement {
             <a href="checkout.html"><i class="fa-solid fa-cart-shopping text-xl text-secondary"></i></a>
           </nav>
           <nav class="w-full h-full flex flex-col justify-center items-center text-4xl font-lora gap-8 font-bold">
-            <a href="index.html" class="hover:text-shades-100 hover:drop-shadow-lg transition menu menu-beranda">Beranda</a>
-            <a href="search.html" class="hover:text-shades-100 hover:drop-shadow-lg transition menu menu-telusuri">Telusuri</a>
-            <a href="map.html" class="hover:text-shades-100 hover:drop-shadow-lg transition menu menu-peta">Peta</a>
-            <a href="login.html" class="hover:text-shades-100 hover:drop-shadow-lg transition menu menu-masuk">Masuk</a>
+            <a href="index.html" class="hover:text-shades-100 hover:drop-shadow-lg menu menu-beranda">Beranda</a>
+            <a href="search.html" class="hover:text-shades-100 hover:drop-shadow-lg menu menu-telusuri">Telusuri</a>
+            <a href="map.html" class="hover:text-shades-100 hover:drop-shadow-lg menu menu-peta">Peta</a>
+            <a href="login.html" class="hover:text-shades-100 hover:drop-shadow-lg menu menu-masuk">Masuk</a>
           </nav>
         </div>
       `;
-	}
+    }
 }
 
-customElements.define('navbar-component', Navbar);
+customElements.define("navbar-component", Navbar);

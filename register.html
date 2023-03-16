@@ -6,38 +6,56 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" />
 		<link href="assets/css/tailwind.css" rel="stylesheet" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	</head>
 	<body class="min-h-screen w-full bg-primary">
 		<navbar-component></navbar-component>
 		<main>
 			<section class="grid h-[90vh] place-items-center">
-				<div class="min-h-[250px] w-11/12 max-w-xl rounded bg-shades-100 p-16 drop-shadow-xl">
-					<h1 class="text-center font-lora text-3xl font-bold tracking-widest text-shades-700">
+				<div class="min-h-[250px] w-11/12 max-w-xl rounded bg-shades-100 md:p-16 px-8 py-16 drop-shadow-xl mb-10" 
+				data-aos="fade-up">
+					<h1 class="text-center font-lora text-3xl font-bold tracking-widest text-shades-700" id="title">
 						R E G I S T E R
 					</h1>
 					<form action="" class="mt-8 flex flex-col gap-4">
 						<input
+							data-aos="flip-left"
+							data-aos-delay="300"
 							type="text"
 							placeholder="Email"
-							class="text-md mt mb-4 w-full border-b-[1px] border-primary bg-shades-100 bg-none py-2 px-1 placeholder-shades-500 focus:outline-none"
+							class="text-md mb-4 w-full border-b-[1px] border-primary bg-shades-100 bg-none py-2 px-1 placeholder-shades-500 focus:outline-none"
 						/>
 						<input
+							data-aos="flip-left"
+							data-aos-delay="400"
 							type="text"
 							placeholder="Username"
-							class="text-md mt mb-4 w-full border-b-[1px] border-primary bg-shades-100 bg-none py-2 px-1 placeholder-shades-500 focus:outline-none"
+							class="text-md mb-4 w-full border-b-[1px] border-primary bg-shades-100 bg-none py-2 px-1 placeholder-shades-500 focus:outline-none"
 						/>
 						<input
-							type="text"
+							data-aos="flip-left"
+							data-aos-delay="500"
+							type="password"
+							id="pw"
 							placeholder="Kata sandi"
-							class="text-md mt w-full border-b-[1px] border-primary bg-shades-100 bg-none py-2 px-1 placeholder-shades-500 focus:outline-none"
+							class="text-md mb-4 w-full border-b-[1px] border-primary bg-shades-100 bg-none py-2 px-1 placeholder-shades-500 focus:outline-none"
 						/>
-
-						<button
-							type="submit"
-							class="mt-4 w-full rounded bg-shades-700 py-2 text-center font-lora font-bold text-shades-100 transition-all hover:bg-shades-500"
-						>
-							Daftar
-						</button>
+						<input
+							data-aos="flip-left"
+							data-aos-delay="600"
+							type="password"
+							id="confirm_pw"
+							placeholder="Konfirmasi kata sandi"
+							class="text-md w-full border-b-[1px] border-primary bg-shades-100 bg-none py-2 px-1 placeholder-shades-500 focus:outline-none"
+						/>
+						<div class="" data-aos="flip-up" data-aos-delay="500" class="w-full">
+							<button
+								type="submit"
+								class="mt-4 w-full rounded bg-shades-700 py-2 text-center font-lora font-bold text-shades-100 transition-all hover:bg-shades-500"
+							>
+								Daftar
+							</button>
+						</div>
 					</form>
 
 					<p class="mt-4 w-full text-center text-sm text-shades-500">
@@ -53,10 +71,35 @@
 	<script src="components/footer.js" type="text/javascript" defer></script>
 	<script src="js/navbar.js" type="text/javascript" defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<script src="https://kit.fontawesome.com/02cc2fc132.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script
 		src="https://code.jquery.com/jquery-3.6.3.min.js"
 		integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
 		crossorigin="anonymous"
 	></script>
+
+	<script>
+		AOS.init({
+			"duration": 1500,
+			"once": true,
+		});
+
+		let textWrapper = document.querySelector("#title")
+
+		textWrapper.innerHTML = textWrapper.textContent.replace(
+		/\S/g,
+		"<span class='letter inline-block'>$&</span>"
+		);
+
+		anime.timeline().add({
+			targets: "#title .letter",
+			opacity: [0, 1],
+			translateY: [50, 0],
+			easing: "easeOutExpo",
+			duration: 2000,
+			delay: (el, i) => 250 + 60 * i,
+		});
+	</script>
 </html>

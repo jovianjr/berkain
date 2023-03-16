@@ -1,72 +1,114 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" />
-		<link href="assets/css/tailwind.css" rel="stylesheet" />
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	</head>
-	<body class="relative min-h-screen w-full bg-primary">
-		<navbar-component></navbar-component>
-		<main>
-			<section class="relative z-50 mt-20 flex h-[55vh] w-full justify-center">
-				<h1 data-aos="fade-up" class="relative z-10 text-center font-lora text-3xl tracking-widest lg:text-5xl">
-					merangkul ke<b>kaya</b>an budaya
-				</h1>
-				<div
-					class="z-1 absolute top-1/2 flex h-full w-full -translate-y-1/2 justify-between overflow-auto py-10 lg:py-20"
-				>
-					<img
-						src="assets/images/camille-bismonte-vUc03gxjEY4-unsplash 3.png"
-						class="object-contain lg:object-cover"
-						data-aos="flip-left"
-						data-aos-delay="300"
-					/>
-					<img
-						src="assets/images/visualsofdana-HxOQxsKZOS0-unsplash 1.png"
-						class="object-contain lg:object-cover"
-						data-aos="flip-right"
-						data-aos-delay="500"
-					/>
-					<img
-						src="assets/images/fikri-syahfana-ERMAtn9IYp4-unsplash 1.png"
-						class="object-contain lg:object-cover"
-						data-aos="flip-left"
-						data-aos-delay="700"
-					/>
-					<img
-						src="assets/images/cok-wisnu-ohzMzm9zWuA-unsplash 2.png"
-						class="object-contain lg:object-cover"
-						data-aos="flip-right"
-						data-aos-delay="900"
-					/>
-				</div>
-				<img
-					class="absolute left-1/2 bottom-0 z-20 w-4/5 -translate-x-1/2 lg:w-fit"
-					src="assets/images/main.png"
-					
-				/>
-			</section>
-		</main>
-		<footer-component></footer-component>
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Lora"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Nunito"
+        />
+        <link href="assets/css/tailwind.css" rel="stylesheet" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="relative min-h-screen w-full bg-primary">
+        <navbar-component></navbar-component>
+        <main>
+            <section
+                class="relative z-50 mt-20 flex h-[55vh] w-full justify-center"
+            >
+                <h1
+                    id="tagline"
+                    class="relative text-center font-lora text-3xl tracking-widest lg:text-5xl"
+                >
+                    merangkul ke<b>kaya</b>an budaya
+                </h1>
+                <div
+                    class="z-1 absolute top-1/2 flex h-full w-full -translate-y-1/2 justify-between overflow-auto py-10 lg:py-20"
+                >
+                    <img
+                        src="assets/images/camille-bismonte-vUc03gxjEY4-unsplash 3.png"
+                        class="imagee object-contain lg:object-cover"
+                    />
+                    <img
+                        src="assets/images/visualsofdana-HxOQxsKZOS0-unsplash 1.png"
+                        class="imagee object-contain lg:object-cover"
+                    />
+                    <img
+                        src="assets/images/fikri-syahfana-ERMAtn9IYp4-unsplash 1.png"
+                        class="imagee object-contain lg:object-cover"
+                    />
+                    <img
+                        src="assets/images/cok-wisnu-ohzMzm9zWuA-unsplash 2.png"
+                        class="imagee object-contain lg:object-cover"
+                    />
+                </div>
+                <img
+                    class="absolute left-1/2 bottom-0 z-20 w-[300px] -translate-x-1/2 object-contain object-bottom lg:w-fit"
+                    id="main"
+                    src="assets/images/main.png"
+                />
+            </section>
+        </main>
+        <footer-component></footer-component>
+    </body>
 
-	<script src="components/navbar.js" type="text/javascript" defer></script>
-	<script src="components/footer.js" type="text/javascript" defer></script>
-	<script src="js/navbar.js" type="text/javascript" defer></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-	<script src="https://kit.fontawesome.com/02cc2fc132.js" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script
-		src="https://code.jquery.com/jquery-3.6.3.min.js"
-		integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-		crossorigin="anonymous"
-	></script>
-	<script>
-		AOS.init({
-			"duration": 1500,
-		});
-	</script>
+    <script src="components/navbar.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="js/navbar.js" type="text/javascript" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script
+        src="https://kit.fontawesome.com/02cc2fc132.js"
+        crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+        crossorigin="anonymous"
+    ></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            once: true,
+        });
+
+        let textWrapper = document.querySelector("#tagline");
+
+        textWrapper.innerHTML = textWrapper.textContent.replace(
+            /\S/g,
+            "<span class='letter inline-block'>$&</span>"
+        );
+
+        anime.timeline().add({
+            targets: "#tagline .letter",
+            opacity: [0, 1],
+            translateY: [100, 0],
+            easing: "easeOutExpo",
+            duration: 2000,
+            delay: (el, i) => 60 * i,
+        });
+
+        TweenMax.from(".imagee", 3, {
+            translateY: "-100px",
+            opacity: 0,
+            width: 0,
+            ease: Expo.easeInOut,
+            delay: 2,
+        });
+
+        TweenMax.from("#main", 3, {
+            height: 0,
+            width: 600,
+            ease: Expo.easeInOut,
+            delay: 1,
+        });
+    </script>
 </html>
